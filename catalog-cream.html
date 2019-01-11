@@ -7,18 +7,18 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="logo">
+        <a class="logo" href="index.html">
           <img src="" width="154" height="64" alt="Логотип магазина Глейси">
         </a>
         <ul class="menu -list">
           <li class="menu-item catalog">
-            <a href="#">Каталог</a>
+            <a class="current" href="#">Каталог</a>
             <ul class="catalog-list">
               <li class="catalog-item">
                 <a href="#">Новинки</a>
               </li>
               <li class="catalog-item cream">
-                <a href="catalog-cream.html">Сливочное</a>
+                <a class="current">Сливочное</a>
               </li>
               <li class="catalog-item">
                 <a href="#">Щербеты</a>
@@ -63,13 +63,22 @@
             </form>
           </li>
           <li class="navigation-item basket">
-            <a href="#"><span class="visually-hidden">Ваша карзина: </span>Пусто</a>
+            <a class="basket-full" href="#"><span class="visually-hidden">Ваша карзина: </span><span class="basket-product">2 товара</span></a>
           </li>
         </ul>
       </nav>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="breadcrumbs-item">Сливочное</li>
+      </ul>
       <div class="heder-contacts">
         <p class="time">С 10 до 20, ежедневно</p>
-        <p class="telefon">8 812 450-25-25</p>
+        <a class="telefon" href="tel:">8 812 450-25-25</a>
       </div>
     </header>
     <main></main>
