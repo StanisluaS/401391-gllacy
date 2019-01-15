@@ -303,9 +303,36 @@ a {
   left: 16px;
 }
 
+.basket-icon polygon {
+  fill: transparent;	
+}
+
 .navigation-link:hover path,
 .navigation-link:hover circle {
   fill: #000000;
+}
+
+.basket-full,
+.basket-full:hover,
+.basket-full:active {
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.basket-full path,
+.basket-full:hover path,
+.basket-full:active path,
+.basket-full circle,
+.basket-full:hover circle,
+.basket-full:active circle {
+  fill: #000000;
+}
+
+.basket-full polygon,
+.basket-full:hover polygon,
+.basket-full:active polygon {
+  fill: #e84d37;
 }
 
 .form-search {
@@ -446,6 +473,8 @@ a {
 }
 
 .heder-contacts {
+  margin-left: auto;	
+	
   color: #ffffff;
   font-weight: 700;
   text-align: right;
@@ -460,8 +489,6 @@ a {
 }
 
 .telefon {
-  display: block;
-
   color: #ffffff;
   font-size: 22px;
   line-height: 24px;
@@ -469,10 +496,6 @@ a {
 
 .header-wrapper {
   display: flex;
-}
-
-.header-wrapper .heder-contacts {
-  margin-left: auto;
 }
 
 .breadcrumbs {
