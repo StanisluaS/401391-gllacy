@@ -146,6 +146,18 @@ a {
   background-color: transparent;
 }
 
+
+.menu-item .current {
+  margin: 0;
+  padding: 7px 14px;
+
+  background-color: #d07058;
+}
+
+.menu-item .current::before {
+  background-color: transparent;
+}
+
 .catalog-list {
   position: absolute;
   top: 41px;
@@ -448,10 +460,27 @@ a {
 }
 
 .telefon {
-  margin: 0;
+  display: block;
 
+  color: #ffffff;
   font-size: 22px;
   line-height: 24px;
+}
+
+.header-wrapper {
+  display: flex;
+}
+
+.header-wrapper .heder-contacts {
+  margin-left: auto;
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 ::-webkit-input-placeholder {
