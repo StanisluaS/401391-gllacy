@@ -258,6 +258,14 @@ a {
   border-radius: 50%;
 }
 
+.basket-link {
+  padding-right: 35px;
+}
+
+.basket-full {
+  padding-right: 17px;
+}
+
 .navigation-link:hover {
   color: #323232;
 
@@ -561,9 +569,9 @@ a {
   top: -35px;
   left: 50%;
   z-index: -1;
-  
+
   margin: 0;
-  
+
   line-height: 0;
 
   transform: translateX(-50%);
@@ -639,28 +647,39 @@ a {
   margin: 0;
   margin-left: -26px;
   padding: 0;
-  
+
   display: flex;
   flex-wrap: wrap;
-  
+
   list-style: none;
 }
 
 .promotion-item {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 16px 22px;
+  padding-left: 18px;
   margin-left: 26px;
   width: 520px;
-  
+
   background-color: #54201b;
-  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-radius: 13px;
+}
+
+.promotion-raspberries {
+  background-image: url('../img/raspberries-background.jpg');
+}
+
+.promotion-chocolate {
+  background-image: url('../img/chocolate-background.jpg');
 }
 
 .promotion-title {
   margin: 0;
   margin-bottom: 15px;
-  
+
   color: #ffffff;
   font-size: 35px;
   font-weight: 700;
@@ -669,8 +688,8 @@ a {
 
 .promotion-page {
   margin: 0;
-  margin-bottom: 42px;
-  
+  margin-bottom: 43px;
+
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
@@ -679,18 +698,15 @@ a {
 
 .btn-promotion {
   margin-left: auto;
+  margin-bottom: 8px;
   padding: 11px 22px;
-  
+
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
-  
-  border-radius: 23px;
-}
 
-.hits-products {
-  margin-bottom: 40px;
+  border-radius: 23px;
 }
 
 .product-list {
@@ -699,24 +715,43 @@ a {
   margin: 0;
   margin-left: -26px;
   padding: 0;
-  
+
   list-style: none;
 }
 
 .product-item {
   position: relative;
-	
+
   display: flex;
   flex-direction: column;
   margin-left: 26px;
+  padding-bottom: 37px;
   width: 267px;
+}
+
+.product-item::after {
+  content: '';
+
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  z-index: -1;
+
+  display: none;
+  height: 405px;
+  width: 293px;
+
+  background-color: #f8f7f4;
+  border-radius: 4px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  opacity: 0.2;
 }
 
 .product-title {
   margin: 0;
   order: 2;
   width: 266px;
-  
+
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -735,30 +770,148 @@ a {
 
 .product-image {
   margin: 0;
+  margin-bottom: 14px;
   order: 1;
   height: 267px;
   width: 267px;
+
+  border-radius: 50%;
+  overflow: hidden;
 }
 
+.product-hit::before {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  height: 61px;
+  width: 61px;
+
+  background-color: #ffffff;
+  background-image: url('../img/hit.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
 
 .product-price {
   position: absolute;
-  
+  top: 209px;
+  left: 0;
+
   margin: 0;
-  
+
   color: #ffffff;
-  font-size: 40px;
+  font-size: 45px;
   font-weight:700;
   line-height: 45px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .price-weight {
   font-size: 30px;
 }
 
-.btn-product {
+.btn-wrapper {
+  position: absolute;
+  top: 333px;
+  left: 0;
+
   display: none;
+  margin: 0;
+  padding-bottom: 22px;
+  min-width: 267px;
+
+  text-align: center;
+}
+
+.btn-product {
+  display: inline-block;
+  padding: 10px 17px;
+  padding-left: 16px;
+
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  border-radius: 22px;
+}
+
+.product-item:hover::after,
+.product-item:hover .btn-wrapper {
+  display: block;
+}
+
+.info {
+  padding: 25px 20px;
+  padding-bottom: 18px;
+
+  background-color: #eee2cc;
+  background-image: url('../img/wafer-background.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  border-radius: 13px;
+}
+
+.info h2 {
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.info-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.info-item {
+  margin-left: 33px;
+  margin-bottom: 6px;
+  padding-left: 58px;
+  padding-top: 16px;
+  width: 476px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+
+  background-repeat: no-repeat;
+  background-position: top 3px left;
+}
+
+.info-item:nth-child(odd) {
+  margin-left: 0;
+  padding-left: 56px;
+}
+
+.info-manufacture {
+  background-image: url('../img/ice.png');
+}
+
+.info-provider {
+  background-image: url('../img/cow.png');
+}
+
+.info-ingredients {
+  background-image: url('../img/leaf.png');
+}
+
+.info-delivery {
+  background-image: url('../img/thermometer.png');
+}
+
+.info-item p {
+  margin: 0;
 }
 
 ::-webkit-input-placeholder {
