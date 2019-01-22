@@ -77,9 +77,9 @@
             </li>
           </ul>
         </nav>
-        <div class="heder-contacts">
-          <p class="time">С 10 до 20, ежедневно</p>
-          <a class="telefon" href="tel:88124502525">8 812 450-25-25</a>
+        <div class="header-contacts">
+          <p class="header-time">С 10 до 20, ежедневно</p>
+          <a class="header-telefon" href="tel:88124502525">8 812 450-25-25</a>
         </div>
       </header>
     </div>
@@ -206,14 +206,16 @@
           </article>
           <section class="subscription">
             <h2 class="visually-hidden">Подписка на наши новости</h2>
-            <p class="subscription-page">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-            <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-              <p class="form-email">
-                <label class="visually-hidden" for="email">Ваша электронная почта</label>
-                <input type="email" id="email" name="email" placeholder="Электронная почта">
-              </p>
-              <button class="btn btn-form" type="submit">Отправить</button>
-            </form>
+            <div class="subscription-wrapper">
+              <p class="subscription-page">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="form-email">
+                  <label class="visually-hidden" for="email">Ваша электронная почта</label>
+                  <input type="email" id="email" name="email" placeholder="Электронная почта">
+                </p>
+                <button class="btn btn-form" type="submit">Отправить</button>
+              </form>
+            </div>
           </section>
         </div>
       </div>
@@ -221,7 +223,7 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="map">
           <p class="map-image">
-            <img width="" height="" src="" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            <img width="1200" height="430" src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
           </p>
         </div>
         <section class="address-telefon">
@@ -239,39 +241,41 @@
       </section>
     </main>
     <footer class="main-footer">
-      <ul class="footer-social">
-        <li class="social-item">
-          <a class="social-link social-tw" href="#"><span class="visually-hidden">Мы в твиттере</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-link social-inst" href="#"><span class="visually-hidden"> мы в инстаграме</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-link social-fb" href="#"><span class="visually-hidden">Мы в фейсбуке</span></a>
-        </li>
-        <li class="social-item">
-          <a class="social-link social-vk" href="#"><span class="visually-hidden">Мы во вконтакте</span></a>
-        </li>
-      </ul>
-      <ul class="footer-info">
-        <li class="footer-info-item">
-          <a href="#">Для поставщиков</a>
-        </li>
-        <li class="footer-info-item">
-          <a href="#">Наши документы</a>
-        </li>
-        <li class="footer-info-item">
-          <a href="#">О производстве</a>
-        </li>
-        <li class="footer-info-item">
-          <a href="#">Экологические стандарты</a>
-        </li>
-      </ul>
-      <div class="copyright">
-        <a class="copyright-icon" href="#">
-          <img width="108" height="39" src="" alt="Логотип HTML Academy">
-        </a>
-        <p>Сделано в <a class="copyright-link" href="#">HTML Academy</a> © 2017</p>
+      <div class="container">
+        <ul class="footer-social">
+          <li class="social-item">
+            <a class="social-link social-tw" href="#"><span class="visually-hidden">Мы в твиттере</span></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-inst" href="#"><span class="visually-hidden"> мы в инстаграме</span></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-fb" href="#"><span class="visually-hidden">Мы в фейсбуке</span></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link social-vk" href="#"><span class="visually-hidden">Мы во вконтакте</span></a>
+          </li>
+        </ul>
+        <ul class="footer-info">
+          <li class="footer-info-item">
+            <a href="#">Для поставщиков</a>
+          </li>
+          <li class="footer-info-item">
+            <a href="#">Наши документы</a>
+          </li>
+          <li class="footer-info-item">
+            <a href="#">О производстве</a>
+          </li>
+          <li class="footer-info-item">
+            <a href="#">Экологические стандарты</a>
+          </li>
+        </ul>
+        <div class="copyright">
+          <a class="copyright-icon" href="#">
+            <img width="108" height="39" src="" alt="Логотип HTML Academy">
+          </a>
+          <p>Сделано в <a class="copyright-link" href="#">HTML Academy</a> © 2017</p>
+        </div>
       </div>
     </footer>
     <section class="feedback">
