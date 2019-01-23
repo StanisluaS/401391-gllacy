@@ -8,7 +8,7 @@ body {
   color: #323232;
   line-height: 22px;
 
-  background-color: #849d8f;  
+  background-color: #849d8f;
 }
 
 .index {
@@ -675,6 +675,8 @@ a {
 }
 
 .promotion-item {
+  z-index: 2;
+
   display: flex;
   flex-direction: column;
   padding: 16px 22px;
