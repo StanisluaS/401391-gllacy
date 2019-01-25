@@ -1150,7 +1150,7 @@ a {
 .inner-title {
   margin: 0;
   margin-bottom: 20px;
-  
+
   color: #ffffff;
   font-size: 35px;
   font-weight: 700;
@@ -1160,56 +1160,57 @@ a {
 .filter-form {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 267px;
+  margin-left: -14px;
   margin-bottom: 40px;
-  
+
   color: #ffffff;
 }
 
 .filter-item {
-  margin-right: 15px;
+  margin-left: 14px;
 }
 
 .filter-title {
   margin: 0;
+  margin-left: 16px;
   margin-bottom: 7px;
-  
+
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
 }
 
 .sorting-select {
-  padding: 9px 13px;
+  padding: 9px 16px;
   padding-right: 30px;
-  width: 193px;
-  box-sizing: border-box;  
-	
+  width: 194px;
+  box-sizing: border-box;
+
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  
+
   background-color: rgba(255, 255, 255, 0.2);
-  background-image: url('../img/arrow-down-white.svg');
+  background-image: url('../img/arrow-down-white.png');
   background-position: right 16px top 13px;
   background-repeat: no-repeat;
   border: none;
   border-radius: 18px;
-  
+
   appearance: none;
   -webkit-appearance: none;
 }
 
 .sorting-select:hover {
   color: #323232;
-  
-  background-image: url('../img/arrow-down-black.svg');
+
+  background-image: url('../img/arrow-down-black.png');
 }
 
 .sorting-select option {
-  padding: 3px 20px;	
-	
+  padding: 3px 20px;
+
   color: #323232;
   font-size: 14px;
   font-weight: 400;
@@ -1219,42 +1220,42 @@ a {
 .price-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 218px;
+  width: 220px;
 }
 
 .price-value {
   margin: 0;
   margin-left: 5px;
   margin-right: auto;
-  
+
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
 }
 
 .min-max {
-  position: relative;	
-	
+  position: relative;
+
   margin: 0;
-  height: 4px;  
+  height: 4px;
   width: 100%;
-  
+
   border-style: solid;
-  border-width: 16px 21px;
+  border-width: 16px 22px;
   border-color: rgba(255, 255, 255, 0.2);
   border-radius: 18px;
 }
 
 .min-max::before {
   content: '';
-  
+
   position: absolute;
   top: 0;
   left: 0;
-  
+
   width: 100%;
   height: 4px;
-  
+
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1262,10 +1263,10 @@ a {
   position: absolute;
   top: 0;
   left: 17px;
-  
+
   width: 106px;
   height: 4px;
-  
+
   background-color: #ffffff;
 }
 
@@ -1274,15 +1275,15 @@ a {
   position: absolute;
   top: -9px;
   z-index: 1;
-  
+
   padding: 0;
   width: 22px;
   height: 22px;
-  
+
   background-color: #ababab;
   border: none;
   border-radius: 50%;
-  box-shadow: inset 0 0 0 8px #ffffff;
+  box-shadow: inset 0 0 0 9px #ffffff;
 }
 
 .min {
@@ -1291,6 +1292,66 @@ a {
 
 .max {
   left: 115px;
+}
+
+.fat-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 415px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+
+  list-style: none;
+}
+
+.fat-item {
+  margin-left: 18px;
+}
+
+.fat-item:first-child {
+  margin-left: 14px;
+}
+
+.fat-list label {
+  position: relative;
+
+  display: block;
+  padding: 9px 32px;
+  padding-right: 0;
+}
+
+.fat-list label::before {
+  content: '';
+
+  position: absolute;
+  top: 7px;
+  left: 0;
+
+  height: 22px;
+  width: 22px;
+
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 4px rgba(255, 255, 255, 0.8);
+}
+
+.fat-list input:checked + label::after {
+  content: '';
+
+  position: absolute;
+  top: 14px;
+  left: 7px;
+
+  height: 8px;
+  width: 8px;
+
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
 }
 
 .main-footer {
