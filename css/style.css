@@ -1177,27 +1177,6 @@ a {
   border-color: #f97777;
 }
 
-.email-error {
-  position: absolute;
-  top: 44px;
-  left: 0;
-
-  margin: 0;
-  margin-top: 5px;
-  padding: 5px 10px;
-  width: 100%;
-  box-sizing: border-box;
-
-  color: #f97777;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-
-  background-color: #ffffff;
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 4px;
-}
-
 .btn-form {
   padding: 10px 19px;
 
@@ -1431,9 +1410,9 @@ a {
 .line {
   position: absolute;
   top: 0;
-  left: 17px;
+  left: 23px;
 
-  width: 106px;
+  width: 92px;
   height: 4px;
 
   background-color: #ffffff;
@@ -1462,7 +1441,7 @@ a {
 }
 
 .max {
-  left: 110px;
+  left: 105px;
 }
 
 .min:hover,

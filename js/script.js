@@ -26,7 +26,7 @@
       var array = subscriptionEmail.value.split('@');
       if(!(array[1].indexOf('.') + 1)){
         evt.preventDefault();
-        subscriptionEmail.setCustomValidity('Введите корректный адресс, после символа "@" должна присутствовать точка');
+        subscriptionEmail.setCustomValidity('Введите корректный адресс, после "' + array[1] + '" должна присутствовать точка');
       }
     }
   };
