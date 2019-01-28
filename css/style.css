@@ -11,16 +11,16 @@ body {
   background-color: #849d8f;
 }
 
-.slider1 {
+.bg1 {
   background-image: radial-gradient(circle closest-side at 50% 400px, #cff6e1, transparent);
 }
 
-.slider2 {
+.bg2 {
   background-color: #8996a6;
   background-image: radial-gradient(circle closest-side at 50% 400px, #d6ebfc, transparent);
 }
 
-.slider3 {
+.bg3 {
   background-color: #9d8b84;
   background-image: radial-gradient(circle closest-side at 50% 400px, #f9e3da, transparent);
 }
@@ -1142,7 +1142,7 @@ a {
 }
 
 .form-email {
-  margin: 0;
+  position: relative;
 }
 
 .form-email input {
@@ -1171,6 +1171,31 @@ a {
 
   border: 2px solid rgba(46, 136, 228, 0.52);
   outline: none;
+}
+
+.form-email input:invalid {
+  border-color: #f97777;
+}
+
+.email-error {
+  position: absolute;
+  top: 44px;
+  left: 0;
+
+  margin: 0;
+  margin-top: 5px;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+  color: #f97777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 4px;
 }
 
 .btn-form {

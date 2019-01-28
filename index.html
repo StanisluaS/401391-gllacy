@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="index slider1">
+  <body class="index bg1">
     <div class="container">
       <header class="main-header">
         <nav class="main-navigation">
@@ -209,10 +209,11 @@
             <div class="subscription-wrapper">
               <p class="subscription-page">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-                <p class="form-email">
+                <div class="form-email">
                   <label class="visually-hidden" for="email">Ваша электронная почта</label>
                   <input type="email" id="email" name="email" placeholder="Электронная почта">
-                </p>
+                  <p class="email-error">Введите корректный адресс, после символа "@" должна присутствовать точка</p>
+                </div>
                 <button class="btn btn-form" type="submit">Отправить</button>
               </form>
             </div>
