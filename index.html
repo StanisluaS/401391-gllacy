@@ -312,7 +312,24 @@
       </form>
     </section>
     <div class="overlay"></div>
+    <template id="basket-wrapper-template">
+      <div class="basket-wrapper">
+        <table class="basket-list">
+        </table>
+        <p class="basket-price">Итого: <span class="basket-sum"></span></p>
+        <a class="btn btn-basket" href="#">Оформить заказ</a>
+      </div>
+    </template>
+    <template id="basket-product-template">
+      <tr class="basket-product">
+        <td class="delete-product"><button class="btn-delete" type="button"><span class="visually-hidden">Удалить товар из карзины</span></button></td>
+        <td class="product-imge"><img width="33" height="33" src="" alt=""></td>
+        <td class="product-name"><a href="#"></a></td>
+        <td class="product-weight">1,5 x <span class="price-kilo"></span></td>
+        <td class="price-total"></td>
+      </tr>
+    </template>
     <script src="js/script.js" type="text/javascript"></script>
-	<script src="js/addProduct.js" type="text/javascript"></script>
+  	<script src="js/addProduct.js" type="text/javascript"></script>
   </body>
 </html>
