@@ -38,7 +38,11 @@
   };
 
   var addProduct = function (evt) {
-	  evt.preventDefault();
+	evt.preventDefault();
+	var parentElement = evt.target.parentElement;
+	var pictureProduct = parentElement.querySelector('img').getAttribute('src');
+	var nameProduct = parentElement.querySelector('.product-title').textContent;
+	var priceProduct = parentElement.querySelector('.product-price').textContent.replace('₽/кг', '');	
     if(!basket.classList.contains('basket-full')) {
       var basketWrapperTemplate = document.querySelector('#basket-wrapper-template').content.cloneNode(true);
 	    basket.appendChild(basketWrapperTemplate);
@@ -46,7 +50,18 @@
 	    basketLink.classList.add('basket-link-full');
   	}
     var basketList = basket.querySelector('.basket-list');
+	var totalBasketPrice = basket.querySelector('.basket-sum');
+	var sum = +totalBasketPrice.textContent.replace(' руб.', '');
     var basketProductTemplate = document.querySelector('#basket-product-template').content.cloneNode(true);
+	var productBasketPicture = basketProductTemplate.querySelector('img');
+	var productBasketName = basketProductTemplate.querySelector('.product-name').children[0];
+	var productBasketPrice = basketProductTemplate.querySelector('.price-kilo');
+	var productBasketTotalPrice = basketProductTemplate.querySelector('.price-total');
+	productBasketPicture.setAttribute('src', pictureProduct);
+	productBasketName.textContent = nameProduct;
+	productBasketPrice.textContent = priceProduct + ' руб';
+	productBasketTotalPrice.textContent = 1.5 * priceProduct + ' руб.';
+	totalBasketPrice.textContent = sum + 1.5 * priceProduct + ' руб.';
     basketList.appendChild(basketProductTemplate);
     var buttonsDelete = basketList.querySelectorAll('.btn-delete');
     [].forEach.call(buttonsDelete, function(el) {
@@ -66,9 +81,6 @@
 
   };
 
-  // [].forEach.call(buttonsDelete, function(el){
-  // 	el.addEventListener('click', removeProduct);
-  // });
 
   [].forEach.call(buttonsChoice, function(el){
   	el.addEventListener('click', addProduct);
