@@ -2,6 +2,7 @@
 
 (function () {
 
+//функция передвижения ползунков на странице каталога
   var FACTOR = 500 / 115;
   var filterPrice = document.querySelector('.filter-price');
   var sliders = filterPrice.querySelectorAll('button');

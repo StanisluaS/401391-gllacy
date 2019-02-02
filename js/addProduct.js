@@ -10,6 +10,7 @@
   var basketProduct = basket.querySelectorAll('.basket-product');
   var buttonsDelete = basket.querySelectorAll('.btn-delete') || null;
 
+//функция добовляет обертку для корзины
   var addWrapperList = function () {
     var basketWrapperTemplate = document.querySelector('#basket-wrapper-template').content.cloneNode(true);
     basket.appendChild(basketWrapperTemplate);
@@ -17,6 +18,7 @@
     basketLink.classList.add('basket-link-full');
   };
 
+//функция добовляет все данные от товаре в корзину
   var addDataProduct = function (picture, name, price) {
     var basketList = basket.querySelector('.basket-list');
 	  var totalBasketPrice = basket.querySelector('.basket-sum');
@@ -37,6 +39,7 @@
     basketList.appendChild(basketProductTemplate);
   };
 
+//функция убирает товар из корзины
   var removeProduct = function (evt) {
 	  evt.preventDefault();
     var totalBasketPrice = basket.querySelector('.basket-sum');
@@ -71,6 +74,7 @@
 	  }
   };
 
+//функция добовляет товар в корзину
   var addProduct = function (evt) {
 	evt.preventDefault();
 	var parentElement = evt.target.parentElement;
